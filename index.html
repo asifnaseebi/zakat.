@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="zakat.css">
+</head>
+<body>
+    <h1>The Calculator of Zakat</h1>
+        <br>
+    <input type="number" id="TotalCash" placeholder="Enter your Cash">
+    <br>
+    <input type="number" id="TotalGold" placeholder="Enter your Gold">
+    <br>
+    <input type="number" id="totalSilwar" placeholder="Enter your Silwar">
+    <br>
+
+    <br>
+    <button onclick="
+
+        let cash = document.getElementById('TotalCash').value;
+        let cashD = cash /40;
+
+        let gold = document.getElementById('TotalGold').value;
+        let goldCash = gold*120000 /40; 
+
+        let silver = document.getElementById('totalSilwar').value;
+        let silverCash = silver*1500 /40;
+
+        let totalZakat = cashD + goldCash + silverCash;
+       document.getElementById('heading').innerText=totalZakat;">
+
+        Sarch
+    </button>
+    
+                <h3 id="heading">your zakat</h3>
+
+                <h2>Producer by Asif khan
+                </h2>
+
+</body>
+
+</html>
